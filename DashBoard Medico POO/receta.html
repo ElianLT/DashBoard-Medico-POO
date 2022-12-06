@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title>Receta Medica</title>
+    <link type="text/css" rel="stylesheet" href="css/consulta.css"
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+        <h2 class="logo-nombre"><span>H</span>C-UN<span>EM</span>I</h2>
+        </div>
+    </header>
+    <table>
+        <tr>
+            <td> <div class="col-sm-6">
+                <h2>Receta Medica </h2>
+            </div>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">Nombre del paciente</label>
+                        <input type="text" name="productCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="product">Farmaco</label>
+                        <input type="text" name="product" id="product">
+                    </div>
+                    <div>
+                        <label for="qty">Cantidad</label>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="product1">Indicaciones</label>
+                        <input type="text" name="product1" id="product1">
+                    </div>
+                    <div>
+                        <label for="product1">Duracion del tratamiento</label>
+                        <input type="text" name="product2" id="product2">
+                    </div>
+                    <div>
+                        <label for="product1">Medico descriptor</label>
+                        <input type="text" name="product3" id="product3">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Recetar">
+                        <input type="reset" value="Reiniciar">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Nombres del paciente</th>
+                                <th>Farmaco</th>
+                                <th>Cantidad</th>
+                                <th>Indicaciones</th>
+                                <th>Duracion de tratamiento</th>
+                                <th>Medico descriptor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
